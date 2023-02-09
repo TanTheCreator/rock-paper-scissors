@@ -14,15 +14,26 @@
     </header>
 
     <main>
-        <div class="container">
-            <div class="choice" id="rock">rock</div>
-            <div class="choice" id="paper">paper</div>
-            <div class="choice" id="scissors">scissors</div>
+        <div id="choice-section">
+            <object class="choices" data="imgs/rock.svg" width="30%" height="100%"> </object>
+            <object class="choices" data="imgs/paper.svg" width="30%" height="100%"> </object>
+            <object class="choices" data="imgs/scissors.svg" width="30%" height="100%"> </object>
+        </div>
+
+        <div id=score-section>
+            <div id="player">
+                <h1>Player:</h1>
+                <h1 id="player-score">0</h1>
+            </div>
+            <div id="machine">
+                <h1>Machine:</h1>
+                <h1 id="machine-score">0</h1>
+            </div>
         </div>
     </main>
 
     <footer>
-        <p>footer placeholder text</p>
+        <p>Come check out my other projects <a href="https://github.com/TanTheCreator" target="_blank">here</a>!</p>
     </footer>
 </body>
 </html>
