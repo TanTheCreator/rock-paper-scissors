@@ -1,8 +1,13 @@
 * {
     padding: 0;
     margin: 0;
-    --font-size: calc(12px + 1.5vh);
+    --font-size: 7vmax;
     --main-color: rgb(87, 87, 87);
+    --shadow-color: black;
+}
+
+object {
+    pointer-events: none;
 }
 
 body {
@@ -14,11 +19,11 @@ body {
     width: 100%;
     background-color: var(--main-color);
     user-select: none;
+    font-family: 'Kanit', sans-serif;
 }
 
 header {
     display: flex;
-    font-size: var(--font-size);
     height: 15%;
     max-width: 100%;
     justify-content: center;
@@ -32,7 +37,7 @@ main {
     align-items: center;
     height: 75%;
     width: 100%;
-    background-color: rgb(197, 197, 197);
+    background-color: rgb(231, 231, 231);
 }
 
 footer {
@@ -74,6 +79,23 @@ a:hover {
     display: flex;
 }
 
-object {
-    pointer-events: none;
+.game-title {
+    font-size: var(--font-size);
+    color: rgb(197, 197, 197);
+    text-transform: uppercase;
+    text-shadow: -1px -1px var(--shadow-color),
+                 -2px -2px var(--shadow-color),
+                 -3px -3px var(--shadow-color),
+                 -4px -4px var(--shadow-color),
+                 -5px -5px var(--shadow-color);
+}
+
+.score-text {
+    color: rgb(197, 197, 197);
+    text-transform: uppercase;
+    text-shadow: -1px -1px var(--shadow-color),
+                 -2px -2px var(--shadow-color),
+                 -3px -3px var(--shadow-color),
+                 -4px -4px var(--shadow-color),
+                 -5px -5px var(--shadow-color);
 }
